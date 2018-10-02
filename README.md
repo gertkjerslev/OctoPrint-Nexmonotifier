@@ -2,7 +2,7 @@
 
 Recieve SMS/text notifications when OctoPrint jobs are complete.
 
-![Nexmo Notifier](https://github.com/gfk76/Nexmonotifier/blob/master/extras/nexmonotifier.png)
+![Nexmo Notifier](https://github.com/gfk76/OctoPrint-Nexmonotifier/blob/master/extras/nexmonotifier.png)
 
 ## Setup
 
@@ -13,7 +13,7 @@ You need to install the Nexmo library on you OctoPrint server:
 Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
 or manually using this URL:
 
-    https://github.com/gfk76/Nexmonotifier/archive/master.zip
+    https://github.com/gfk76/OctoPrint-Nexmonotifier/archive/master.zip
 
 
 ## Configuration
