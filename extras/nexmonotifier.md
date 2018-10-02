@@ -21,11 +21,9 @@ archive: https://github.com/gfk76/OctoPrint-Nexmonotifier/archive/master.zip
 
 # TODO
 tags:
-- a list
-- of tags
-- that apply
-- to your plugin
-- (take a look at the existing plugins for what makes sense here)
+- notification
+- SMS
+- Text message
 
 # TODO
 screenshots:
@@ -81,5 +79,4 @@ compatibility:
 
 ---
 
-**TODO**: Longer description of your plugin, configuration examples etc. This part will be visible on the page at
-http://plugins.octoprint.org/plugin/nexmonotifier/
+Receive SMS/Text notifications when OctoPrint jobs are complete.
