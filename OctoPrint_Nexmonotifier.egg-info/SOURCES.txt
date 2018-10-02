@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+OctoPrint_Nexmonotifier.egg-info/PKG-INFO
+OctoPrint_Nexmonotifier.egg-info/SOURCES.txt
+OctoPrint_Nexmonotifier.egg-info/dependency_links.txt
+OctoPrint_Nexmonotifier.egg-info/entry_points.txt
+OctoPrint_Nexmonotifier.egg-info/not-zip-safe
+OctoPrint_Nexmonotifier.egg-info/requires.txt
+OctoPrint_Nexmonotifier.egg-info/top_level.txt
+octoprint_nexmonotifier/__init__.py
+octoprint_nexmonotifier/static/css/nexmonotifier.css
+octoprint_nexmonotifier/static/js/nexmonotifier.js
+octoprint_nexmonotifier/static/less/nexmonotifier.less
+octoprint_nexmonotifier/templates/README.txt

@@ -1,0 +1,3 @@
+[octoprint.plugin]
+nexmonotifier = octoprint_nexmonotifier
+

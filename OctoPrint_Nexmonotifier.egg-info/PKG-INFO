@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: OctoPrint-Nexmonotifier
+Version: 0.1.0
+Summary:  Octoprint plugin for print completion notifications using Nexmo SMS gateway
+Home-page: https://github.com/gfk76/OctoPrint-Nexmonotifier
+Author: Gert Kjerslev
+Author-email: gertk@v220.dk
+License: AGPLv3
+Description: UNKNOWN
+Platform: UNKNOWN

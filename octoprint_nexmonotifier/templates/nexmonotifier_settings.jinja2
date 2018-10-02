@@ -1,0 +1,45 @@
+<h3>{{ _('Nexmo Notifier Configuration') }}</h3>
+
+<form class="form-horizontal">
+	<div class="control-group">
+		<div class="controls" title="{{ _('You can toggle whether notifications are enabled while a print is in progress.') }}">
+			<label class="checkbox">
+				<input type="checkbox" data-bind="checked: settings.plugins.nexmonotifier.enabled" /> {{ _('Enabled') }}
+			</label>
+		</div>
+	</div>
+
+	<h4>{{ _('Nexmo Settings') }}</h4>
+
+	<div class="control-group" title="{{ _('Secret') }}">
+		<label class="control-label">{{ _('Secret') }}</label>
+		<div class="controls">
+			<input type="text" class="input-block-level" data-bind="value: settings.plugins.nexmonotifier.secret">
+		</div>
+	</div>
+
+	<div class="control-group" title="{{ _('Api key') }}">
+		<label class="control-label">{{ _('Api key') }}</label>
+		<div class="controls">
+			<input type="text" class="input-block-level" data-bind="value: settings.plugins.nexmonotifier.api_key">
+		</div>
+	</div>
+
+	<div class="control-group" title="{{ _('Phone number to receive messages - eg. 4512345678 where 45 is country code for Denmark ') }}">
+		<label class="control-label">{{ _('Phone number') }}</label>
+		<div class="controls">
+			<input type="text" class="input-block-level" data-bind="value: settings.plugins.nexmonotifier.phone_number">
+		</div>
+	</div>
+
+	<h4>{{ _('Message Content') }}</h4>
+
+	<p>{{ _('The SMS template may contain the tags <code>{filename}</code> and <code>{elapsed_time}</code>.') }}</p>
+
+	<div class="control-group" title="{{ _('Content of notification') }}">
+		<label class="control-label">{{ _('Body') }}</label>
+		<div class="controls">
+			<input type="text" class="input-block-level" data-bind="value: settings.plugins.nexmonotifier.message_format.body">
+		</div>
+	</div>
+</form>
