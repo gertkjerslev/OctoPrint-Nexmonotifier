@@ -20,7 +20,8 @@ class NexmonotifierPlugin(octoprint.plugin.EventHandlerPlugin,
             			secret="",
             			api_key="",
                         phone_number="",
-            			message_format=dict(body="Job complete: {filename} done printing after {elapsed_time}")
+            			message_format=dict(body="Job complete: {filename} done printing after {elapsed_time}",
+                        flashsms=True)
                         )
 
         def get_settings_version(self):
@@ -50,9 +51,11 @@ class NexmonotifierPlugin(octoprint.plugin.EventHandlerPlugin,
             secret = self._settings.get(["secret"])
             api_key = self._settings.get(["api_key"])
             phone_number = self._settings.get(["phone_number"])
+            message_class = 0
             client = nexmo.Client(key=api_key, secret=secret)
-            response = client.send_message({'from' : 'Nexmonotifier', 'to' : phone_number,'text' : message})
+            response = client.send_message({'from' : 'Nexmonotifier', 'to' : phone_number,'text' : message, 'message-class' : message_class})
 
+            #if self._settings.get(["flashsms"]):
 
 
             try:

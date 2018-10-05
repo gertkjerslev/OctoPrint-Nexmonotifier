@@ -42,4 +42,14 @@
 			<input type="text" class="input-block-level" data-bind="value: settings.plugins.nexmonotifier.message_format.body">
 		</div>
 	</div>
+
+<p>{{ _('Enable Flash SMS/Text messages') }}</p>
+	<div class="control-group">
+		<div class="controls" title="{{ _('You can toggle whether notifications .') }}">
+			<label class="checkbox">
+				<input type="checkbox" data-bind="checked: settings.plugins.nexmonotifier.flashsms" /> {{ _('Flash SMS') }}
+			</label>
+		</div>
+	</div>
+
 </form>
