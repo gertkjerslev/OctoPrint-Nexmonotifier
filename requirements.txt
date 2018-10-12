@@ -1,9 +1,6 @@
 ###
-# This file is only here to make sure that something like
+# Prerequisites: You need to install the Nexmo library on you OctoPrint server
 #
-#    pip install -e .
-#
-# works as expected. Requirements can be found in setup.py.
 ###
-
+pip install nexmo
 .
