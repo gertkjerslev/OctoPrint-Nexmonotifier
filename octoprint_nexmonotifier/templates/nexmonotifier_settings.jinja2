@@ -25,6 +25,13 @@
 		</div>
 	</div>
 
+	<div class="control-group" title="{{ _('Sender ID - eg. Nexmonotifier. Different countries have different standards and restrictions.') }}">
+		<label class="control-label">{{ _('Sender ID') }}</label>
+		<div class="controls">
+			<input type="text" class="input-block-level" data-bind="value: settings.plugins.nexmonotifier.senderID">
+		</div>
+	</div>
+
 	<div class="control-group" title="{{ _('Phone number to receive messages - eg. 4512345678 where 45 is country code for Denmark ') }}">
 		<label class="control-label">{{ _('Phone number') }}</label>
 		<div class="controls">

@@ -50,6 +50,7 @@ class NexmonotifierPlugin(octoprint.plugin.EventHandlerPlugin,
         secret = self._settings.get(["secret"])
         api_key = self._settings.get(["api_key"])
         phone_number = self._settings.get(["phone_number"])
+        senderID =  self._settings.get(["senderID"])
         message_class = 1
         client = nexmo.Client(key=api_key, secret=secret)
 
@@ -57,7 +58,7 @@ class NexmonotifierPlugin(octoprint.plugin.EventHandlerPlugin,
             message_class = 0
 
         response = client.send_message(
-            {'from': 'Nexmonotifier', 'to': phone_number, 'text': message, 'message-class': message_class})
+            {'from': senderID, 'to': phone_number, 'text': message, 'message-class': message_class})
 
         try:
             response = response['messages'][0]
